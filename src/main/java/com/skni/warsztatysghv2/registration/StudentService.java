@@ -1,6 +1,5 @@
 package com.skni.warsztatysghv2.registration;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -9,7 +8,7 @@ public class StudentService {
     private final StatusService statusService;
     private final ApplicationFormService applicationFormService;
 
-    public StudentService(UUIDStudentIdGenerator uuidStudentIdGenerator, StatusService statusService, ApplicationFormService applicationFormService){
+    public StudentService(UUIDStudentIdGenerator uuidStudentIdGenerator, StatusService statusService, ApplicationFormService applicationFormService) {
         this.studentIdGenerator = uuidStudentIdGenerator;
         this.statusService = statusService;
         this.applicationFormService = applicationFormService;

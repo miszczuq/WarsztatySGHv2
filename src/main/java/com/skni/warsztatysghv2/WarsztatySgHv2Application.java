@@ -9,7 +9,7 @@ import org.springframework.context.event.EventListener;
 
 @SpringBootApplication
 public class WarsztatySgHv2Application {
-    private StudentService studentService;
+    private final StudentService studentService;
 
     public static void main(String[] args) {
         SpringApplication.run(WarsztatySgHv2Application.class, args);
