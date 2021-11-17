@@ -1,5 +1,6 @@
 package com.skni.warsztatysghv2;
 
+import com.skni.warsztatysghv2.registration.FileSaver;
 import com.skni.warsztatysghv2.registration.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
