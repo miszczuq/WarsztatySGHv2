@@ -1,6 +1,5 @@
 package com.skni.warsztatysghv2.registration;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;
@@ -10,14 +9,13 @@ public class StudentService {
     private final UUIDStudentIdGenerator studentIdGenerator;
     private final StatusService statusService;
     private final ApplicationFormService applicationFormService;
+    private final FileSaver fileSaver;
 
-    @Autowired
-    private FileSaver fileSaver;
-
-    public StudentService(UUIDStudentIdGenerator uuidStudentIdGenerator, StatusService statusService, ApplicationFormService applicationFormService) {
+    public StudentService(UUIDStudentIdGenerator uuidStudentIdGenerator, StatusService statusService, ApplicationFormService applicationFormService, FileSaver fileSaver) {
         this.studentIdGenerator = uuidStudentIdGenerator;
         this.statusService = statusService;
         this.applicationFormService = applicationFormService;
+        this.fileSaver = fileSaver;
     }
 
 
